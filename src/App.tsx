@@ -1,60 +1,60 @@
 import './App.css'
 
 const navigation = [
-  'Producto',
-  'Soluciones',
-  'Clientes',
-  'Recursos',
-  'Precios',
+  'Inicio',
+  'Servicios',
+  'Nosotros',
+  'Blog',
+  'Contacto',
 ]
 
 const services = [
   {
-    title: 'Inteligencia de negocio',
+    title: 'Servicio Principal 1',
     description:
-      'Tableros dinámicos, alertas proactivas y modelos predictivos para anticipar demanda.',
-    icon: '📊',
+      'Descripción breve del servicio principal que ofrece tu empresa y sus beneficios clave.',
+    icon: '🚀',
   },
   {
-    title: 'Automatización end-to-end',
+    title: 'Servicio Principal 2',
     description:
-      'Orquesta flujos complejos, integra APIs y elimina tareas repetitivas usando low-code.',
-    icon: '⚙️',
+      'Detalles sobre otro servicio importante, destacando cómo resuelve los problemas del cliente.',
+    icon: '⚡',
   },
   {
-    title: 'Experiencias personalizadas',
+    title: 'Servicio Principal 3',
     description:
-      'Segmentación avanzada, journeys omnicanal y contenido adaptativo para cada usuario.',
-    icon: '✨',
+      'Información sobre un tercer servicio o característica distintiva de tu negocio.',
+    icon: '💎',
   },
 ]
 
 const stats = [
-  { label: 'Tiempo a valor', value: '6 semanas' },
-  { label: 'Niveles de adopción', value: '92%' },
-  { label: 'Eficiencia operativa', value: '+38%' },
+  { label: 'Clientes Satisfechos', value: '+500' },
+  { label: 'Años de Experiencia', value: '10+' },
+  { label: 'Proyectos Completados', value: '1k+' },
 ]
 
 const testimonials = [
   {
-    author: 'Mariana Torres',
-    role: 'COO · AndinaPay',
+    author: 'Nombre Cliente',
+    role: 'Cargo · Empresa',
     quote:
-      'Escalar operaciones en cinco países habría sido imposible sin esta plataforma. La visibilidad en tiempo real nos permite decidir con datos, no con intuición.',
+      'Este es un espacio para un testimonio destacado de un cliente satisfecho con tu producto o servicio.',
   },
   {
-    author: 'Luis Peretti',
-    role: 'CTO · FarmaNova',
+    author: 'Nombre Cliente',
+    role: 'Cargo · Empresa',
     quote:
-      'Integrar nuestro legacy con nuevos servicios fue sorprendentemente ágil. Hoy liberamos features semanalmente con total trazabilidad.',
+      'Otro testimonio que refuerza la confianza y credibilidad de tu marca ante nuevos visitantes.',
   },
 ]
 
 const workflows = [
-  'Control de KPIs críticos mediante paneles contextuales',
-  'Integraciones listas con ERP, CRM y data warehouses líderes',
-  'Workflows versionados con auditoría granular',
-  'Modelos de IA supervisados para decisiones sensibles',
+  'Característica destacada número uno',
+  'Beneficio clave para el usuario final',
+  'Ventaja competitiva de tu solución',
+  'Punto importante sobre tu servicio',
 ]
 
 function App() {
@@ -63,8 +63,8 @@ function App() {
       <header className="hero">
         <nav className="nav">
           <div className="brand">
-            <span>Pulse</span>
-            <div className="brand-badge">Enterprise</div>
+            <span>TuMarca</span>
+            <div className="brand-badge">Template</div>
           </div>
           <div className="nav-links">
             {navigation.map((item) => (
@@ -74,25 +74,23 @@ function App() {
             ))}
           </div>
           <div className="nav-cta">
-            <button className="ghost">Iniciar sesión</button>
-            <button className="primary">Agenda una demo</button>
+            <button className="ghost">Ingresar</button>
+            <button className="primary">Contacto</button>
           </div>
         </nav>
 
         <div className="hero-grid">
           <div className="hero-copy">
-            <p className="eyebrow">Plataforma de operaciones digitales</p>
+            <p className="eyebrow">Tu Propuesta de Valor</p>
             <h1>
-              Resiliencia, velocidad y control en una sola capa operativa
+              Título principal atractivo para tu audiencia
             </h1>
             <p className="hero-subtitle">
-              Conecta tus equipos, procesos y datos en un hub unificado con
-              seguridad enterprise, observabilidad avanzada e IA aplicada al
-              negocio.
+              Subtítulo descriptivo que explica brevemente qué hace tu empresa y por qué es la mejor opción para el cliente.
             </p>
             <div className="hero-actions">
-              <button className="primary">Comenzar ahora</button>
-              <button className="ghost">Ver arquitectura</button>
+              <button className="primary">Llamada a la acción</button>
+              <button className="ghost">Saber más</button>
             </div>
             <div className="hero-stats">
               {stats.map((stat) => (
@@ -106,45 +104,45 @@ function App() {
 
           <div className="hero-card">
             <div className="card-header">
-              <p className="eyebrow">Status global</p>
-              <span className="badge success">Operativo</span>
+              <p className="eyebrow">Estado del Sistema</p>
+              <span className="badge success">Activo</span>
             </div>
             <div className="card-body">
               <div className="signal">
-                <p>Tiempo real</p>
-                <strong>147 servicios monitoreados</strong>
-                <small>Tráfico estable · SLA 99.98%</small>
+                <p>Monitoreo</p>
+                <strong>Sistema funcionando</strong>                
+                <small>Todo opera con normalidad</small>
               </div>
               <div className="timeline">
                 <div className="timeline-row">
                   <span className="dot ok" />
                   <div>
-                    <strong>Sync distribuido</strong>
-                    <p>Latency promedio 87ms</p>
+                    <strong>Servicio A</strong>
+                    <p>Rendimiento óptimo</p>
                   </div>
                   <span className="pill neutral">Estable</span>
                 </div>
                 <div className="timeline-row">
                   <span className="dot warn" />
                   <div>
-                    <strong>Batch financiero</strong>
-                    <p>Backlog controlado · 14m</p>
+                    <strong>Servicio B</strong>
+                    <p>Mantenimiento programado</p>
                   </div>
-                  <span className="pill warning">Atención</span>
+                  <span className="pill warning">Info</span>
                 </div>
                 <div className="timeline-row">
                   <span className="dot ok" />
                   <div>
-                    <strong>Data Lake</strong>
-                    <p>Consumo 63% · Último refresh 2m</p>
+                    <strong>Base de Datos</strong>
+                    <p>Actualizada recientemente</p>
                   </div>
-                  <span className="pill neutral">Sin riesgo</span>
+                  <span className="pill neutral">OK</span>
                 </div>
               </div>
             </div>
             <div className="card-footer">
-              <p>Automatiza respuestas con playbooks aprobados.</p>
-              <button className="outline">Ver tablero en vivo</button>
+              <p>Visualización de métricas en tiempo real.</p>
+              <button className="outline">Ver detalles</button>
             </div>
           </div>
         </div>
@@ -152,11 +150,10 @@ function App() {
 
       <section className="section services">
         <div className="section-header">
-          <p className="eyebrow">Capacidades clave</p>
-          <h2>Infraestructura digital lista para escalar</h2>
+          <p className="eyebrow">Nuestros Servicios</p>
+          <h2>Soluciones diseñadas para tu crecimiento</h2>
           <p>
-            Reúne la visibilidad técnica y el contexto de negocio que necesitas
-            para operar servicios críticos con confianza.
+            Ofrecemos herramientas y servicios adaptados a las necesidades específicas de tu negocio para maximizar resultados.
           </p>
         </div>
         <div className="cards-grid">
@@ -165,7 +162,7 @@ function App() {
               <span className="icon">{service.icon}</span>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <button className="link">Explorar caso de uso</button>
+              <button className="link">Más información</button>
             </article>
           ))}
         </div>
@@ -173,11 +170,10 @@ function App() {
 
       <section className="section workflows">
         <div className="section-header">
-          <p className="eyebrow">Operación orquestada</p>
-          <h2>Workflows gobernados por datos</h2>
+          <p className="eyebrow">Cómo trabajamos</p>
+          <h2>Procesos optimizados y eficientes</h2>
           <p>
-            Define métricas críticas, alerta equipos adecuados y automatiza la
-            respuesta sin perder trazabilidad.
+            Nuestra metodología garantiza resultados consistentes, transparencia en cada etapa y entregas puntuales.
           </p>
         </div>
         <ul className="workflow-list">
@@ -192,8 +188,8 @@ function App() {
 
       <section className="section testimonials">
         <div className="section-header">
-          <p className="eyebrow">Empresas de alto impacto</p>
-          <h2>Equipos que ya operan con Pulse</h2>
+          <p className="eyebrow">Testimonios</p>
+          <h2>Lo que dicen nuestros clientes</h2>
         </div>
         <div className="cards-grid">
           {testimonials.map((testimonial) => (
@@ -211,16 +207,15 @@ function App() {
       <section className="section cta">
         <div className="cta-card">
           <div>
-            <p className="eyebrow">Prueba guiada</p>
-            <h2>Activa tu entorno sandbox en menos de 10 minutos</h2>
+            <p className="eyebrow">Empieza hoy</p>
+            <h2 className="white">Lleva tu negocio al siguiente nivel</h2>
             <p>
-              Recibe acompañamiento de nuestro equipo de arquitectura y lleva
-              tus flujos reales para validarlos sin riesgos.
+              Contáctanos para una consulta gratuita y descubre cómo podemos ayudarte a alcanzar tus objetivos.
             </p>
           </div>
           <div className="cta-actions">
-            <button className="primary">Solicitar acceso</button>
-            <button className="ghost">Descargar checklist</button>
+            <button className="primary">Contactar ahora</button>
+            <button className="ghost white">Ver planes</button>
           </div>
         </div>
       </section>
@@ -228,15 +223,15 @@ function App() {
       <footer className="footer">
         <div>
           <div className="brand">
-            <span>Pulse</span>
-            <div className="brand-badge">Enterprise</div>
+            <span>TuMarca</span>
+            <div className="brand-badge">Template</div>
           </div>
-          <p>© {new Date().getFullYear()} Pulse. Operación orquestada.</p>
+          <p>© {new Date().getFullYear()} TuMarca. Todos los derechos reservados.</p>
         </div>
         <div className="footer-links">
-          <a href="#">Status</a>
-          <a href="#">Seguridad</a>
-          <a href="#">Soporte 24/7</a>
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Soporte</a>
         </div>
       </footer>
     </div>
